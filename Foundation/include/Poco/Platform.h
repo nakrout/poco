@@ -94,6 +94,10 @@
 #elif defined(POCO_VXWORKS)
   #define POCO_OS_FAMILY_UNIX 1
   #define POCO_OS POCO_OS_VXWORKS
+#elif defined(POCO_VXWORKS_UNIX)
+	#define POCO_OS_FAMILY_UNIX 1
+	#define POCO_OS POCO_OS_UNKNOWN_UNIX
+	#undef POCO_HAVE_FD_EPOLL
 #elif defined(unix) || defined(__unix) || defined(__unix__)
 	#define POCO_OS_FAMILY_UNIX 1
 	#define POCO_OS POCO_OS_UNKNOWN_UNIX

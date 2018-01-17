@@ -19,7 +19,9 @@
 #include <unistd.h>
 #include <stdlib.h>
 #include <sys/utsname.h>
+#if !defined(POCO_VXWORKS_UNIX)
 #include <sys/param.h>
+#endif
 #if defined(POCO_OS_FAMILY_BSD)
 #include <sys/sysctl.h>
 #elif POCO_OS == POCO_OS_HPUX

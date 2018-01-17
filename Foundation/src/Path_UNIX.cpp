@@ -19,7 +19,7 @@
 #include <unistd.h>
 #include <stdlib.h>
 #include <sys/types.h>
-#if !defined(POCO_VXWORKS)
+#if !(defined(POCO_VXWORKS) || defined(POCO_VXWORKS_UNIX))
 #include <pwd.h>
 #endif
 #include <climits>

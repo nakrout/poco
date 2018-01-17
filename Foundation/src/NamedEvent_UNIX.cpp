@@ -23,8 +23,10 @@
 #else
 #include <unistd.h>
 #include <sys/types.h>
+#if !defined(POCO_VXWORKS_UNIX)
 #include <sys/ipc.h>
 #include <sys/sem.h>
+#endif
 #endif
 
 

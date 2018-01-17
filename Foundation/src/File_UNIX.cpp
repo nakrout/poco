@@ -25,6 +25,7 @@
 #include <sys/mount.h>
 #elif (POCO_OS == POCO_OS_SOLARIS)
 #include <sys/statvfs.h>
+#elif defined(POCO_VXWORKS_UNIX)
 #else
 #include <sys/statfs.h>
 #endif
